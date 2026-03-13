@@ -70,19 +70,19 @@ The easiest way to run this application is using **Docker**, which guarantees an
 
 ## Local Environment (Development without Docker)
 
-If you prefer to make changes and need hot-reloading:
+This project uses **Vite** as its build tool and development server. If you prefer to make changes code and need Hot Module Replacement (HMR):
 
 1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Run the development server:
+2. Run the Vite development server:
    ```bash
    npm run dev
    ```
 
-3. The server will normally start on `http://localhost:5173` (depending on if you use Vite or another tool) or according to your `package.json` configuration.
+3. Vite will start a background process and serve the application, typically on `http://localhost:5173`. Keep this terminal open while you work. Any changes saved to your files will automatically reflect in the browser.
 
 ---
 
