@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ifc-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ifc-viewer-app
+    ports:
+      - "8080:80" # Mapea el puerto 8080 de tu PC al 80 del contenedor Nginx
+    restart: unless-stopped
+    # Opcional: Limitar recursos para mayor estabilidad en producción
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.50'
+    #       memory: 512M

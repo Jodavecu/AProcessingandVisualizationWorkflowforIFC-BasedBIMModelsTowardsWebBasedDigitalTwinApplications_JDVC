@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.git/
+.gitignore
+temp*.js
+original_main.js
+missing_code.js
+globals_block.js
+init_calls.js
+build_error.txt
+*.py
+*.mjs
+temp-hotformerloc/
