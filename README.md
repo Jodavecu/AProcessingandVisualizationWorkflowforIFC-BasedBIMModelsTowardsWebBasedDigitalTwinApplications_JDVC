@@ -3,7 +3,7 @@
 This is the repository for the thesis project:
 
 **A Processing and Visualization Workflow for IFC-Based BIM Models Towards Web-Based Digital Twin Applications, 2026** by *Jorge David Velázquez Cupido*
-[[Website](#)] [[Thesis Document](masterthesis_Velazquez_Cupido_WiSe202526.pdf)] [[Demo Video](#)] [[Dataset](#)]
+[[Website](#)] [[Thesis Document](masterthesis_Velazquez_Cupido_WiSe202526.pdf)] [[Demo Video](tesis%20JDVC%20framewrok%20v3.mp4)] [[Dataset](#)]
 
 ![Project Status](https://img.shields.io/badge/Status-Active-success)
 ![Docker Supported](https://img.shields.io/badge/Docker-Ready-blue)
