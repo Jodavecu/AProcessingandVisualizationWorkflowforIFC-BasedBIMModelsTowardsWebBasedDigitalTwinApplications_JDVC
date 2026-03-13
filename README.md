@@ -1,8 +1,18 @@
 # A Processing and Visualization Workflow for IFC-Based BIM Models Towards Web-Based Digital Twin Applications
 
+This is the repository for the thesis project:
+
+**A Processing and Visualization Workflow for IFC-Based BIM Models Towards Web-Based Digital Twin Applications, 2026** by *Jose David Velasco*
+[[Website](#)] [[Thesis Document](#)] [[Demo Video](#)] [[Dataset](#)]
+
 ![Project Status](https://img.shields.io/badge/Status-Active-success)
 ![Docker Supported](https://img.shields.io/badge/Docker-Ready-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+<div align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=Arquitectura+del+Proyecto" alt="Project Architecture Diagram" width="100%">
+  <p><i>(a) Project Architecture Overview</i></p>
+</div>
 
 ## Overview
 
