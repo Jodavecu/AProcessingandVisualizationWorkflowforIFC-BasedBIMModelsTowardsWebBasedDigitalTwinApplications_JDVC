@@ -4,94 +4,94 @@
 ![Docker Supported](https://img.shields.io/badge/Docker-Ready-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## Descripción General
+## Overview
 
-Este repositorio contiene el prototipo y la arquitectura de pruebas para el desarrollo de un flujo de trabajo enfocado en el procesamiento y visualización de modelos BIM en formato **IFC** (Industry Foundation Classes) directamente en el navegador. 
+This repository contains the prototype and testing architecture for developing a workflow focused on the processing and visualization of BIM models in **IFC** (Industry Foundation Classes) format directly in the web browser.
 
-El objetivo principal de esta aplicación es servir como base para el desarrollo de aplicaciones web orientadas a **Gemelos Digitales (Digital Twins)** en los sectores AEC (Arquitectura, Ingeniería y Construcción), integrando datos geométricos, sensores IoT, y métricas de rendimiento en un visor interactivo 3D.
-
----
-
-## Características Principales
-
-- **Visor 3D en el Navegador**: Carga y renderizado de archivos `.ifc` sin necesidad de *plugins* externos.
-- **Árbol de Modelo (Model Tree)**: Estructura jerárquica de elementos espaciales (Sitio, Edificio, Plantas, Elementos) interactiva.
-- **Integración de Sensores IoT (Simulados)**: Visualización de datos dinámicos como temperatura y humedad a través de un panel de métricas en tiempo real y visualizaciones tipo *Heatmap* sobre el modelo 3D.
-- **Herramientas de Medición y Corte**: Distancias, ángulos, áreas, y planos de sección interactivos para el análisis del modelo integrado.
-- **Entorno Optimizado "Pro"**: Listo para producción utilizando contenedores Docker con compilación multi-etapa (Node + Nginx).
+The main objective of this application is to serve as a foundation for developing **Digital Twin** oriented web applications in the AEC (Architecture, Engineering, and Construction) sectors, integrating geometric data, IoT sensors, and performance metrics into an interactive 3D viewer.
 
 ---
 
-## Tecnologías Utilizadas
+## Key Features
+
+- **In-Browser 3D Viewer**: Loading and rendering of `.ifc` files without the need for external plugins.
+- **Model Tree**: Interactive hierarchical structure of spatial elements (Site, Building, Storeys, Elements).
+- **IoT Sensor Integration (Simulated)**: Visualization of dynamic data such as temperature and humidity through a real-time metrics dashboard and Heatmap visualizations over the 3D model.
+- **Measurement and Clipping Tools**: Interactive distances, angles, areas, and section planes for integrated model analysis.
+- **Optimized "Pro" Environment**: Production-ready using Docker containers with multi-stage builds (Node + Nginx).
+
+---
+
+## Technologies Used
 
 ### Frontend
 - **HTML5, CSS3, JavaScript (ES6+)**
-- **Three.js** (Motor de renderizado 3D subyacente)
-- **IFC.js / OBC (Open BIM Components)** para el parseo y renderizado de geometría IFC.
+- **Three.js** (Underlying 3D rendering engine)
+- **IFC.js / OBC (Open BIM Components)** for parsing and rendering IFC geometry.
 
-### Despliegue (Docker)
-- **Node.js (18 Alpine)**: Para el proceso de construcción (*build*).
-- **Nginx (Alpine)**: Servidor web ligero para servir los archivos estáticos en producción.
+### Deployment (Docker)
+- **Node.js (18 Alpine)**: For the build process.
+- **Nginx (Alpine)**: Lightweight web server to serve static files in production.
 - **Docker & Docker Compose**.
 
 ---
 
-## Instrucciones de Instalación y Despliegue
+## Installation and Deployment Instructions
 
-La forma más sencilla de ejecutar esta aplicación es mediante **Docker**, lo cual garantiza un entorno idéntico en desarrollo y producción.
+The easiest way to run this application is using **Docker**, which guarantees an identical environment in development and production.
 
-### Prerrequisitos
-- Tener instalado [Docker](https://docs.docker.com/get-docker/) y [Docker Compose](https://docs.docker.com/compose/install/).
+### Prerequisites
+- Have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
-### Pasos
+### Steps
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Jodavecu/AProcessingandVisualizationWorkflowforIFC-BasedBIMModelsTowardsWebBasedDigitalTwinApplications_JDVC.git
    cd AProcessingandVisualizationWorkflowforIFC-BasedBIMModelsTowardsWebBasedDigitalTwinApplications_JDVC
    ```
 
-2. **Levantar el entorno con Docker Compose:**
+2. **Start the environment with Docker Compose:**
    ```bash
    docker-compose up -d --build
    ```
-   *El parámetro `--build` asegura que se construya la imagen más reciente, y `-d` ejecuta el contenedor en segundo plano.*
+   *The `--build` parameter ensures the latest image is built, and `-d` runs the container in the background.*
 
-3. **Acceder a la aplicación:**
-   Abre tu navegador de preferencia y dirígete a:
+3. **Access the application:**
+   Open your preferred browser and go to:
    [http://localhost:8080](http://localhost:8080)
 
-4. **Para detener la aplicación:**
+4. **To stop the application:**
    ```bash
    docker-compose down
    ```
 
 ---
 
-## Entorno Local (Desarrollo sin Docker)
+## Local Environment (Development without Docker)
 
-Si prefieres realizar cambios y necesitas recarga en caliente (*hot-reload*):
+If you prefer to make changes and need hot-reloading:
 
-1. Instala las dependencias:
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Ejecuta el servidor de desarrollo:
+2. Run the development server:
    ```bash
    npm run dev
    ```
 
-3. El servidor iniciará normalmente en `http://localhost:5173` (dependiendo si usas Vite u otra herramienta) o según la configuración de tu `package.json`.
+3. The server will normally start on `http://localhost:5173` (depending on if you use Vite or another tool) or according to your `package.json` configuration.
 
 ---
 
-## Trabajo Futuro
+## Future Work
 
-- [ ] Integración con APIs de sensores reales.
-- [ ] Optimización de carga de modelos masivos (LODs dinámicos).
-- [ ] Capacidades colaborativas en tiempo real (anotaciones compartidas).
+- [ ] Integration with real sensor APIs.
+- [ ] Optimization for loading massive models (Dynamic LODs).
+- [ ] Real-time collaborative capabilities (shared annotations).
 
-## Contacto
+## Contact
 
-Jodavecu - Investigación y Desarrollo
+Jodavecu - Research and Development
